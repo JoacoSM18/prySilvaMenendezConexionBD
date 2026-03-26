@@ -11,8 +11,8 @@ namespace prySilvaMenendezConexionBD
 {
     internal class ClassConexionBD
     {
+        public OleDbConnection conn { get; private set; }
 
-        OleDbConnection conn;
         public void ConectarBD()
         {
             conn = new OleDbConnection();
