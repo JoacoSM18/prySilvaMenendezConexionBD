@@ -16,9 +16,7 @@ namespace prySilvaMenendezConexionBD
         public void ConectarBD()
         {
             conn = new OleDbConnection();
-
             conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + Application.StartupPath + "\\..\\..\\BaseDatos\\baseJuegoRPG.accdb";
-
             conn.Open();
 
         }

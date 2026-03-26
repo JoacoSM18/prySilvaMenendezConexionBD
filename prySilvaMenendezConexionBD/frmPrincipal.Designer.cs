@@ -34,7 +34,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "frmPrincipal";
             this.Text = "Conexion Base de Datos en Access";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
