@@ -39,7 +39,7 @@
             this.lblEstadoConexion1});
             this.lblEstadoConexion.Location = new System.Drawing.Point(0, 339);
             this.lblEstadoConexion.Name = "lblEstadoConexion";
-            this.lblEstadoConexion.Size = new System.Drawing.Size(384, 22);
+            this.lblEstadoConexion.Size = new System.Drawing.Size(518, 22);
             this.lblEstadoConexion.TabIndex = 0;
             this.lblEstadoConexion.Text = "statusStrip1";
             // 
@@ -53,10 +53,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(518, 361);
             this.Controls.Add(this.lblEstadoConexion);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conexion Base de Datos en Access";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.lblEstadoConexion.ResumeLayout(false);
