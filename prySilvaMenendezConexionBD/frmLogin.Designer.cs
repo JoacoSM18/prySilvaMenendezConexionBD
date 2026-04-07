@@ -38,40 +38,43 @@
             // lblGmail
             // 
             this.lblGmail.AutoSize = true;
-            this.lblGmail.Location = new System.Drawing.Point(90, 49);
+            this.lblGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGmail.Location = new System.Drawing.Point(99, 51);
             this.lblGmail.Name = "lblGmail";
-            this.lblGmail.Size = new System.Drawing.Size(87, 13);
+            this.lblGmail.Size = new System.Drawing.Size(121, 17);
             this.lblGmail.TabIndex = 0;
-            this.lblGmail.Text = "Gmail de Usuario";
+            this.lblGmail.Text = "Gmail de Usuario:";
             // 
             // lblContraeña
             // 
             this.lblContraeña.AutoSize = true;
-            this.lblContraeña.Location = new System.Drawing.Point(90, 117);
+            this.lblContraeña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraeña.Location = new System.Drawing.Point(99, 115);
             this.lblContraeña.Name = "lblContraeña";
-            this.lblContraeña.Size = new System.Drawing.Size(61, 13);
+            this.lblContraeña.Size = new System.Drawing.Size(85, 17);
             this.lblContraeña.TabIndex = 1;
-            this.lblContraeña.Text = "Contraseña";
+            this.lblContraeña.Text = "Contraseña:";
             // 
             // mskGmail
             // 
-            this.mskGmail.Location = new System.Drawing.Point(220, 42);
+            this.mskGmail.Location = new System.Drawing.Point(229, 48);
             this.mskGmail.Name = "mskGmail";
             this.mskGmail.Size = new System.Drawing.Size(100, 20);
             this.mskGmail.TabIndex = 0;
             // 
             // mskContrseña
             // 
-            this.mskContrseña.Location = new System.Drawing.Point(220, 110);
+            this.mskContrseña.Location = new System.Drawing.Point(229, 112);
             this.mskContrseña.Name = "mskContrseña";
             this.mskContrseña.Size = new System.Drawing.Size(100, 20);
             this.mskContrseña.TabIndex = 3;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(347, 181);
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(356, 183);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(77, 27);
+            this.btnAceptar.Size = new System.Drawing.Size(84, 29);
             this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -88,6 +91,7 @@
             this.Controls.Add(this.lblContraeña);
             this.Controls.Add(this.lblGmail);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de Sesion BD";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);

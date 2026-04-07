@@ -24,8 +24,11 @@ namespace prySilvaMenendezConexionBD
             try
             {
                 objConectarBD.ConectarBD();
-                lblEstadoConexion1.Text = "Base Conectada";
-                lblEstadoConexion1.BackColor = Color.Green;
+                MessageBox.Show(objConectarBD.conn != null && objConectarBD.conn.State == ConnectionState.Open
+                ? "Conexión abierta"
+                : "Conexión NO abierta");
+                lblEstadoConexion.Text = "Base Conectada";
+                lblEstadoConexion.BackColor = Color.Green;
 
                 CargarDatos();
             }
@@ -46,6 +49,12 @@ namespace prySilvaMenendezConexionBD
                 {
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("No se encontraron registros en la tabla Personaje.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    dgvDatos.Columns.Clear();
+                    dgvDatos.AutoGenerateColumns = true;
                     dgvDatos.DataSource = dt;
                 }
             }
@@ -57,7 +66,8 @@ namespace prySilvaMenendezConexionBD
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
-
+            
         }
+
     }
 }
